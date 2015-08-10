@@ -37,10 +37,10 @@ class dod_login_warnings::gdm {
                     /^5\..*/: {
                         include dod_login_warnings::gdm::rhel5
                     }
-                    default: { unimplemented() }
+                    default: { fail "unimplemented on ${::osfamily} ${::operatingsystemrelease}" }
                 }
             }
-            default: { unimplemented() }
+            default: { fail "unimplemented on ${::osfamily}" }
         }
     }
 }
