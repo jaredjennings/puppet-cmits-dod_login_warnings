@@ -20,7 +20,7 @@
 
 class dod_login_warnings::console {
     file { "/etc/issue":
-        owner => root, group => 0, mode => 0644,
+        owner => root, group => 0, mode => '0644',
         source => "puppet:///modules/dod_login_warnings/80col",
     }
 }

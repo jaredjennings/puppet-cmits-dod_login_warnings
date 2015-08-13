@@ -20,7 +20,7 @@
 class dod_login_warnings::mac_loginwindow::darwin_10_9 {
     file { '/Library/Security/PolicyBanner.rtf':
         ensure => present,
-        owner => root, group => 0, mode => 0644,
+        owner => root, group => 0, mode => '0644',
         source => 'puppet:///modules/dod_login_warnings/paragraphs.rtf',
     }
 }

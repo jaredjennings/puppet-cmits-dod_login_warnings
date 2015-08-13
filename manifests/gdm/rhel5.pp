@@ -21,7 +21,7 @@ class dod_login_warnings::gdm::rhel5 {
 
     # This one is for zenity to show. zenity can word-wrap.
     file { "/etc/issue_paragraphs":
-        owner => root, group => 0, mode => 0644,
+        owner => root, group => 0, mode => '0644',
         source => "puppet:///modules/\
 dod_login_warnings/paragraphs",
     }
